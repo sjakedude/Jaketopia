@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/vue"></script>
     <!-- CSS refrences -->
     <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
@@ -10,7 +11,7 @@
 <body>
 <header>
     <!-- Title of the page -->
-    <h1>The Oracle</h1>
+    <h1>Organization</h1>
 </header>
 <header>
     <!-- Brief description of the page's contents -->
@@ -24,7 +25,7 @@
         <li><a href="adventures.html">Adventures</a></li>
         <li><a href="xbox_revival.html">Xbox Revival</a></li>
         <li><a href="code_projects.html">Code Projects</a></li>
-        <li><a href="oracle.html">Oracle</a></li>
+        <li><a href="organization.html">Organization</a></li>
     </ul>
 </nav>
 <!-- Profile image with brief description -->
@@ -32,12 +33,22 @@
     <figure>
         <img src="media/oracle.jpg" alt="Jake and Grandma" width="518" height="345">
         <figcaption>
-            <h4>Let the oracle lead the way</h4>
+            <h4>Organize your tasks here:</h4>
         </figcaption>
     </figure>
-    <!-- Paragraph that briefly describes my interests -->
-    <p>
-        BLA BLA BLA
+    <input type="text" id="task">
+    <input type="button" value="Add Task" onclick="changeTask()">
+    <br>
+    <div id="taskList">
+        <ul>
+            <li v-for="task in tasks">
+                {{ task }}
+            </li>
+        </ul>
+    </div>
+    <script src="todoList.js"></script>
+
+
     </p>
 </article>
 <footer>

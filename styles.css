@@ -128,3 +128,7 @@ footer p {
     position: relative;
     bottom: 0px;
 }
+
+#taskList ul {
+    padding-left: 350px;
+}
