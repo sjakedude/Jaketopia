@@ -1,0 +1,59 @@
+/* Body styling */
+body {
+    background-color: white;
+}
+
+/* Header styling */
+header {
+    color: black;
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+/* Nav bar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Resizing the images to be smaller so they use less ink */
+article figure {
+    width: 200px;
+    height: 120px;
+}
+article figure img {
+    float: left;
+    padding-right: 15px;
+    width: 50%;
+    height: auto;
+}
+
+/* Making body text appear below image since image is smaller */
+article p {
+    word-wrap: break-word;
+    padding-top: 55px;
+}
+
+/* Removing video from being seen when printing */
+article video {
+    display: none;
+}
+
+/* Footer styling that clearly gives credit to the developer */
+footer {
+    font-weight: bold;
+    font-size: 40px;
+}

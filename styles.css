@@ -1,0 +1,130 @@
+/* Body styling */
+body {
+    background-color: lightseagreen;
+}
+
+/* Header styling */
+header {
+    color: darkblue;
+    margin-left: 0px;
+    font-size: 15px;
+}
+header p {
+    font-size: 20px;
+}
+
+/* Nav bar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Figure styling */
+article figure {
+    margin-left: 0px;
+}
+article figure img {
+    float: left;
+    padding-right: 15px;
+}
+article figure figcaption h4 {
+    font-size: 18px;
+}
+
+/* Article text formatting */
+article p {
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 25px;
+    display: block;
+    margin: 0px 0 0 0;
+}
+
+/* Github link button */
+section a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+section a:active {
+    background-color: red;
+}
+section a:hover {
+    background-color: blue;
+}
+
+/* Table formatting */
+article table {
+    border-collapse: collapse;
+    width: 100%;
+}
+article th, td {
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+}
+article tr:nth-child(even) {
+    background-color: green
+}
+article tr:nth-child(odd) {
+    background-color: orange
+}
+article th {
+    background-color: green;
+    color: white;
+}
+article table caption {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* List styling for steps for xbox revival page */
+article ol li {
+    font-size: 30px;
+}
+article ol {
+    padding-left: 670px;
+}
+
+/* List styling for adventures page */
+#favorite_states ol {
+    padding-left: 30px;
+}
+
+/* List styling for code projects page */
+article ul {
+    padding-left: 500px;
+}
+article ul li {
+    margin-left: 200px;
+}
+
+/* Footer styling */
+footer p {
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    bottom: 0px;
+}
