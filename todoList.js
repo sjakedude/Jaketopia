@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#taskList',
     data: {
-        tasks: ["Poop"]
+        tasks: []
     },
     created() {
         fetch("https://api.myjson.com/bins/74163")

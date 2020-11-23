@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- CSS refrences -->
-    <link rel="stylesheet" href="styles.css" media="screen">
-    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="contact-styles.css" media="screen">
     <meta charset="UTF-8">
     <title>Jaketopia</title>
 </head>
 <body>
 <header>
-    <!-- Title of the page -->
-    <h1>Reach out to me</h1>
+    <h1>Welcome to Jaketopia!</h1>
 </header>
-<header>
-    <!-- Brief description of the page's contents -->
-    <p>Fill out the form to send me an email</p>
-</header>
-<nav>
-    <ul>
-        <!-- Navigation to the rest of the pages on my website -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="truck_restoration.html">Truck Restoration</a></li>
-        <li><a href="adventures.html">Adventures</a></li>
-        <li><a href="xbox_revival.html">Xbox Revival</a></li>
-        <li><a href="code_projects.html">Code Projects</a></li>
-        <li><a href="organization.html">Organization</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-    </ul>
-</nav>
 
-<footer>
-    <p>
-        <!-- Ending credits, maybe add a timestamp -->
-        Written by Jake Stephens Inc. 2020
-    </p>
-</footer>
+<section id="form">
+    <div id="names">
+        <p>Fill out the text boxes appropriately</p>
+        <input type="text" id="firstName" name="firstName"><label for="firstName">First Name</label>
+        <br>
+        <input type="text" id="lastName" name="lastName"><label for="lastName">Last Name</label>
+        <br>
+        <input type="text" id="facilitator" name="facilitator"><label for="facilitator">Facilitator Name</label>
+    </div>
+    <div id="woodType">
+        <p>Select favorite wood:</p>
+        <input type="radio" id="oak" name="wood"><label for="oak">Oak</label>
+        <br>
+        <input type="radio" id="cherry" name="wood"><label for="cherry">Cherry</label>
+        <br>
+        <input type="radio" id="balsa" name="wood"><label for="balsa">Balsa</label>
+        <br>
+        <input type="radio" id="maple" name="wood"><label for="maple">Maple</label>
+    </div>
+    <div id="achievements">
+        <p>Select all that apply to you:</p>
+        <input type="checkbox" id="hardworker" name="hardworker"><label for="hardworker">Hardworker</label>
+        <input type="checkbox" id="energetic" name="energetic"><label for="energetic">Energetic</label>
+        <br>
+        <input type="checkbox" id="complainer" name="complainer"><label for="complainer">Complainer</label>
+        <input type="checkbox" id="friendly" name="friendly"><label for="friendly">Friendly</label>
+        <br>
+        <input type="checkbox" id="smart" name="smart"><label for="smart">Smart</label>
+        <input type="checkbox" id="respectfull" name="respectfull"><label for="respectfull">Respectfull</label>
+        <br>
+        <input type="checkbox" id="idiot" name="idiot"><label for="idiot">Idiot</label>
+        <input type="checkbox" id="agile" name="agile"><label for="agile">Agile</label>
+    </div>
+    <div id="done">
+        <p>When done please click submit to send us your form</p>
+        <input type="submit">
+    </div>
+</section>
 </body>
 </html>
