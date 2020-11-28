@@ -34,7 +34,7 @@
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     left: 0px;
     bottom: 0px;
     padding-left: 10px;
