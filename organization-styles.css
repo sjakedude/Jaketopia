@@ -1,0 +1,41 @@
+#taskTextBox {
+    width: 300px;
+    height: 30px;
+}
+
+#taskList ul {
+    list-style: none;
+}
+
+#taskList ul li {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#taskList {
+    padding-bottom: 280px;
+}
+
+#alert {
+    padding-left: 15px;
+    font-weight: bold;
+    color: orange;
+    font-size: 29px;
+}
+
+#taskAddButton {
+    width: 100px;
+    height: 38px;
+}
+
+.xButton {
+    color: red;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding-left: 10px;
+}

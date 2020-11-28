@@ -67,6 +67,7 @@ section a:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 50px;
 }
 section a:active {
     background-color: red;
@@ -125,8 +126,9 @@ article ul li {
 footer p {
     font-size: 15px;
     font-style: italic;
-    position: relative;
+    position: static;
     bottom: 0px;
+    left: 0px;
 }
 
 #taskList ul {

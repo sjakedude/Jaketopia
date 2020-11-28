@@ -3,6 +3,7 @@
 <head>
     <script src="https://unpkg.com/vue"></script>
     <!-- CSS refrences -->
+    <link rel="stylesheet" href="organization-styles.css" media="screen">
     <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
 </header>
 <header>
     <!-- Brief description of the page's contents -->
-    <p>The answers to all of your questions are here</p>
+    <p>A simple place to keep track of the things you have to do</p>
 </header>
 <nav>
     <ul>
@@ -32,25 +33,23 @@
 <!-- Profile image with brief description -->
 <article>
     <figure>
-        <img src="media/oracle.jpg" alt="Jake and Grandma" width="518" height="345">
+        <img src="media/oracle.jpg" alt="Jake and Grandma" width="518" height="410">
         <figcaption>
             <h4>Organize your tasks here:</h4>
         </figcaption>
     </figure>
-    <input type="text" id="task">
-    <input type="button" value="Add Task" onclick="changeTask()">
+    <input id="taskTextBox" type="text">
+    <input id="taskAddButton" type="button" value="Add Task" onclick="addTask()">
+    <label id="alert"></label>
     <br>
     <div id="taskList">
         <ul>
             <li v-for="task in tasks">
-                {{ task }}
+                {{ task }} <input v-bind:id="task" class="xButton" type="button" value="X" onclick="removeTask(this.id)">
             </li>
         </ul>
     </div>
     <script src="todoList.js"></script>
-
-
-    </p>
 </article>
 <footer>
     <p>

@@ -22,3 +22,8 @@
     margin-left: 200px;
     padding-left: 300px;
 }
+
+#message {
+    padding-right: 7px;
+    margin-right: 10px;
+}

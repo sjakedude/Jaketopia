@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css" media="screen">
     <link rel="stylesheet" href="contact-styles.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
     <meta charset="UTF-8">
     <title>Jaketopia</title>
 </head>
 <body>
 <header>
-    <h1>Welcome to Jaketopia!</h1>
+    <!-- Title of the page -->
+    <h1>Contact me</h1>
 </header>
-
+<header>
+    <!-- Brief description of the page's contents -->
+    <p>Here you can reach out to me with a message, also feel free to make other selections if you wish</p>
+</header>
+<nav>
+    <ul>
+        <!-- Navigation to the rest of the pages on my website -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="truck_restoration.html">Truck Restoration</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="xbox_revival.html">Xbox Revival</a></li>
+        <li><a href="code_projects.html">Code Projects</a></li>
+        <li><a href="organization.html">Organization</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+</nav>
 <section id="form">
     <div id="names">
         <p>Fill out the text boxes appropriately</p>
@@ -17,7 +35,7 @@
         <br>
         <input type="text" id="lastName" name="lastName"><label for="lastName">Last Name</label>
         <br>
-        <input type="text" id="facilitator" name="facilitator"><label for="facilitator">Facilitator Name</label>
+        <textarea id="message" name="message" rows="4" cols="24"></textarea><label for="message">Message</label>
     </div>
     <div id="woodType">
         <p>Select favorite wood:</p>
@@ -31,16 +49,16 @@
     </div>
     <div id="achievements">
         <p>Select all that apply to you:</p>
-        <input type="checkbox" id="hardworker" name="hardworker"><label for="hardworker">Hardworker</label>
+        <input type="checkbox" id="hardworking" name="hardworking"><label for="hardworking">Hardworking</label>
         <input type="checkbox" id="energetic" name="energetic"><label for="energetic">Energetic</label>
         <br>
-        <input type="checkbox" id="complainer" name="complainer"><label for="complainer">Complainer</label>
+        <input type="checkbox" id="helpful" name="helpful"><label for="helpful">Helpful</label>
         <input type="checkbox" id="friendly" name="friendly"><label for="friendly">Friendly</label>
         <br>
         <input type="checkbox" id="smart" name="smart"><label for="smart">Smart</label>
-        <input type="checkbox" id="respectfull" name="respectfull"><label for="respectfull">Respectfull</label>
+        <input type="checkbox" id="respectful" name="respectful"><label for="respectful">Respectful</label>
         <br>
-        <input type="checkbox" id="idiot" name="idiot"><label for="idiot">Idiot</label>
+        <input type="checkbox" id="brave" name="brave"><label for="brave">Brave</label>
         <input type="checkbox" id="agile" name="agile"><label for="agile">Agile</label>
     </div>
     <div id="done">
