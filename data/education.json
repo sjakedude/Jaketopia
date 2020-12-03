@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "school": "Eastern Connecticut State University",
+      "major": "Computer Science",
+      "degree": "BS",
+      "grad_year": 2018
+    },
+    {
+      "school": "Boston University",
+      "major": "Software Development",
+      "degree": "MS",
+      "grad_year": 2022
+    }
+  ]
+}
