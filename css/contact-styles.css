@@ -2,15 +2,6 @@
     font-style: italic;
 }
 
-#names br {
-    margin: 300px;
-}
-
-#names input {
-    margin-bottom: 5px;
-    margin-right: 10px;
-    padding-right: 70px;
-}
 #woodType input {
     margin-bottom: 10px;
 }
