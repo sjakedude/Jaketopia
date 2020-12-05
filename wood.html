@@ -11,6 +11,8 @@
 <html lang="en">
 <head>
     <!-- CSS refrences -->
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="css/wood-styles.css" media="screen">
     <link rel="stylesheet" href="css/styles.css" media="screen">
     <link rel="stylesheet" href="css/print.css" media="print">
     <meta charset="UTF-8">
@@ -39,6 +41,24 @@
         <li><a href="wood.html">Wood</a></li>
     </ul>
 </nav>
+<section>
+    <button type="button" onclick="fetchData()">Fetch Data</button>
+</section>
+<div id="woodTable">
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Wood</th>
+        </tr>
+        <tr v-for="p in woodTableRows">
+            <td>{{ p.first_name }}</td>
+            <td>{{ p.last_name }}</td>
+            <td>{{ p.wood_type }}</td>
+        </tr>
+    </table>
+</div>
+<script src="js/woodData.js"></script>
 <footer>
     <hr>
     <p>

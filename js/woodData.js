@@ -17,9 +17,10 @@ function sendData() {
 // displays it in the table
 function fetchData() {
     // If the table is already populated, do nothing
-    if (app.person.length > 0) {
+    if (app.woodTableRows.length > 0) {
         return false;
     }
+
     // Create the http get request and send it
     const httpRequest = new XMLHttpRequest();
     httpRequest.open("GET", "data/wood.json", true);
@@ -32,8 +33,8 @@ function fetchData() {
             for (let x in json.person) {
                 let first_name = json.person[x].first_name;
                 let last_name = json.person[x].last_name;
-                let wood = json.person[x].wood;
-                let person = {first_name: first_name, last_name: last_name, wood: wood};
+                let wood_type = json.person[x].wood_type;
+                let person = {first_name: first_name, last_name: last_name, wood_type: wood_type};
                 app.woodTableRows.push(person);
             }
         }

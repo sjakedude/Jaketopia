@@ -3,12 +3,12 @@
     {
       "first_name": "Jake",
       "last_name": "Stephens",
-      "wood": "Balsa"
+      "wood_type": "Balsa"
     },
     {
       "first_name": "Sloane",
       "last_name": "Stephens",
-      "wood": "Maple"
+      "wood_type": "Maple"
     }
   ]
 }
