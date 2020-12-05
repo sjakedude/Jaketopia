@@ -1,0 +1,33 @@
+/* Table formatting */
+article table {
+    border-collapse: collapse;
+    width: 100%;
+}
+article th, td {
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+}
+article tr:nth-child(even) {
+    background-color: white;
+}
+article tr:nth-child(odd) {
+    background-color: white;
+}
+article th {
+    background-color: green;
+    color: white;
+}
+article table caption {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* List styling for code projects page */
+article ul {
+    padding-left: 15px;
+}
+article ul li {
+    margin-left: 15px;
+    font-size: 20px;
+}
