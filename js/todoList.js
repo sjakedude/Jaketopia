@@ -1,3 +1,5 @@
+var currentId = "";
+
 const app = new Vue({
     el: '#taskList',
     data: {
@@ -33,14 +35,22 @@ function taskRemoveAlert() {
 
 }
 
-// Function that removes a task from the list
+// Function that prompts the user to see if they want to remove a task from the list
 function removeTask(id) {
-    if (confirm("Are you sure you want to remove the task \"" + id + "\" ?")) {
-        // Removing item
-        let index = app.tasks.indexOf(id);
-        app.tasks.splice(index, 1);
-    } else {
-        // Do nothing
-        return false;
-    }
+    document.getElementById("popupWindow").style.display = "block";
+    let message = "Are you sure you want to remove the task \"" + id + "\" ?";
+    document.getElementById("popupWindow-text").innerText = message
+    currentId = id;
+}
+
+// Function that remove
+function yesRemoveTask() {
+    document.getElementById("popupWindow").style.display = "none";
+    let index = app.tasks.indexOf(currentId);
+    app.tasks.splice(index, 1);
+    currentId = ""
+}
+
+function noRemoveTask() {
+    document.getElementById("popupWindow").style.display = "none";
 }

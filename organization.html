@@ -52,10 +52,18 @@
     </div>
     <script src="js/todoList.js"></script>
 </article>
+<!-- Popup window for confirmation -->
+<div id="popupWindow">
+    <div id="popupWindow-content">
+        <p id="popupWindow-text"></p>
+        <input type="button" id="yesButton" value="Yes" onclick="yesRemoveTask()">
+        <input type="button" id="noButton" value="No" onclick="noRemoveTask()">
+    </div>
+</div>
 <footer>
     <hr>
     <p>
-        <!-- Ending credits, maybe add a timestamp -->
+        <!-- Ending credits -->
         Written by Jake Stephens Inc. 2020
     </p>
 </footer>
