@@ -1,16 +1,14 @@
 {
-  "education": [
+  "person": [
     {
-      "school": "Eastern Connecticut State University",
-      "major": "Computer Science",
-      "degree": "BS",
-      "grad_year": 2018
+      "first_name": "Jake",
+      "last_name": "Stephens",
+      "wood": "Balsa"
     },
     {
-      "school": "Boston University",
-      "major": "Software Development",
-      "degree": "MS",
-      "grad_year": 2022
+      "first_name": "Sloane",
+      "last_name": "Stephens",
+      "wood": "Maple"
     }
   ]
 }

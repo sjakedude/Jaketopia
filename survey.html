@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/styles.css" media="screen">
-    <link rel="stylesheet" href="css/contact-styles.css" media="screen">
+    <link rel="stylesheet" href="css/survey-styles.css" media="screen">
     <link rel="stylesheet" href="css/print.css" media="print">
     <meta charset="UTF-8">
     <title>Jaketopia</title>
@@ -26,7 +26,7 @@
         <li><a href="code_projects.html">Code Projects</a></li>
         <li><a href="organization.html">Organization</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="survey.html">Survey</a></li>
     </ul>
 </nav>
 <section id="form">
@@ -52,8 +52,9 @@
     </div>
     <div id="done">
         <p>When done please click submit to send us your form</p>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="sendData()">
     </div>
+    <script src="js/woodData.js"></script>
 </section>
 <footer>
     <hr>
