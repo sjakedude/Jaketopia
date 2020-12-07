@@ -15,7 +15,7 @@ function fetchData() {
 
     // Create the http get request and send it
     const httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET", "data/wood.json", true);
+    httpRequest.open("GET", "https://api.jsonbin.io/b/5fcd8f84516f9d127028f553", true);
     httpRequest.send();
     // As soon as we receive a response, process it
     httpRequest.onreadystatechange = function() {
