@@ -5,14 +5,6 @@ const app = new Vue({
     }
 });
 
-
-function sendData() {
-    var formData = document.getElementById("form").serializeObject();
-    console.log("HI");
-    console.log(formData);
-}
-
-
 // Function that fetches the data from the json file and
 // displays it in the table
 function fetchData() {

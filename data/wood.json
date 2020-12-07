@@ -9,6 +9,16 @@
       "first_name": "Sloane",
       "last_name": "Stephens",
       "wood_type": "Maple"
+    },
+    {
+      "first_name": "Rich",
+      "last_name": "Stephens",
+      "wood_type": "Oak"
+    },
+    {
+      "first_name": "Noah",
+      "last_name": "Sternat",
+      "wood_type": "Mahogany"
     }
   ]
 }

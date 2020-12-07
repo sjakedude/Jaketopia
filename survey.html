@@ -30,7 +30,7 @@
         <li><a href="wood.html">Wood</a></li>
     </ul>
 </nav>
-<section id="form">
+<form name="surveyForm" onsubmit="return validateInput()">
     <div id="nameInput">
         <p>Fill out the text boxes appropriately</p>
         <input type="text" id="firstName" name="firstName"><label for="firstName">First Name</label>
@@ -50,13 +50,15 @@
         <input type="radio" id="birch" name="wood"><label for="birch">Birch</label>
         <br>
         <input type="radio" id="hickory" name="wood"><label for="hickory">Hickory</label>
+        <br>
+        <input type="radio" id="mahogany" name="wood"><label for="mahogany">Mahogany</label>
     </div>
     <div id="done">
         <p>When done please click submit to send us your form</p>
-        <input type="submit" value="Submit" onclick="sendData()">
+        <input type="submit" value="Submit">
     </div>
-    <script src="js/woodData.js"></script>
-</section>
+    <script src="js/survey.js"></script>
+</form>
 <footer>
     <hr>
     <p>
