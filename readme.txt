@@ -14,7 +14,12 @@ view resume button on the home page.
 
 I went above and beyond in this project by having many pages, and using
 Javascript to make the experience more unique, such as adding custom pop
-up windows and form validation.
+up windows and a back end database for storing people's first and last
+names and their favorite type of wood. On the survey page, the users can
+submit their favorite wood to the database, then the wood page will fetch
+the data and display it in a table.
+
+There is an admin page /admin.html that allows me to reset the database.
 
 This is my first time doing web development and I am super proud of this
 website. I am so happy to finally have an understanding for the web

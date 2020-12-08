@@ -5,12 +5,12 @@ const app = new Vue({
     data: {
         tasks: []
     }
-})
+});
 
 // Function that adds a task
 function addTask() {
     if (app.tasks.length > 6) {
-        taskAddedAlert("Too many tasks")
+        taskAddedAlert("Too many tasks");
         return false;
     }
     let task = document.getElementById("taskTextBox").value;
@@ -39,7 +39,7 @@ function taskRemoveAlert() {
 function removeTask(id) {
     document.getElementById("popupWindow").style.display = "block";
     let message = "Are you sure you want to remove the task \"" + id + "\" ?";
-    document.getElementById("popupWindow-text").innerText = message
+    document.getElementById("popupWindow-text").innerText = message;
     currentId = id;
 }
 
@@ -48,7 +48,7 @@ function yesRemoveTask() {
     document.getElementById("popupWindow").style.display = "none";
     let index = app.tasks.indexOf(currentId);
     app.tasks.splice(index, 1);
-    currentId = ""
+    currentId = "";
 }
 
 function noRemoveTask() {

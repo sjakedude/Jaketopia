@@ -1,4 +1,4 @@
-const woodTypes = ["oak", "cherry", "balsa", "maple", "birch", "hickory", "mahogany"]
+const woodTypes = ["oak", "cherry", "balsa", "maple", "birch", "hickory", "mahogany"];
 var wood_type = "";
 
 function findWood(value) {
