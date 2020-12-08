@@ -30,7 +30,7 @@
         <li><a href="wood.html">Wood</a></li>
     </ul>
 </nav>
-<form name="surveyForm" onsubmit="return validateInput()">
+<form name="surveyForm">
     <div id="nameInput">
         <p>Fill out the text boxes appropriately</p>
         <input type="text" id="firstName" name="firstName"><label for="firstName">First Name</label>
@@ -55,7 +55,7 @@
     </div>
     <div id="done">
         <p>When done please click submit to send us your form</p>
-        <input type="submit" value="Submit">
+        <input type="button" value="Submit" onclick="pushData()">
     </div>
     <script src="js/survey.js"></script>
 </form>

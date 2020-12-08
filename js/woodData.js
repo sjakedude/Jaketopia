@@ -15,7 +15,10 @@ function fetchData() {
 
     // Create the http get request and send it
     const httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET", "https://api.jsonbin.io/b/5fcd8f84516f9d127028f553", true);
+    httpRequest.open("GET", "https://api.jsonbin.io/b/5fcd9b91516f9d127028f8ad", true);
+    httpRequest.setRequestHeader("Content-Type","application/json");
+    httpRequest.setRequestHeader("versioning", "false");
+    httpRequest.setRequestHeader("secret-key", "$2b$10$uAkM9kVDr02pUm9ChKrKEOdiNSQoNQqhNlAw8rcIsN18VtoE.sotO");
     httpRequest.send();
     // As soon as we receive a response, process it
     httpRequest.onreadystatechange = function() {
