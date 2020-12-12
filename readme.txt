@@ -19,9 +19,15 @@ names and their favorite type of wood. On the survey page, the users can
 submit their favorite wood to the database, then the wood page will fetch
 the data and display it in a table.
 
+The database is jsonbin.io. They provide free json hosting where you can
+submit GET and PUT requests to the api and can access/change the data. It
+is free so that's why I chose to use it.
+
 There is an admin page /admin.html that allows me to reset the database.
 
 This is my first time doing web development and I am super proud of this
 website. I am so happy to finally have an understanding for the web
 development community and I can say with confidence that I know HTML, CSS,
 and Javascript.
+
+All files have been validated and all is good.
