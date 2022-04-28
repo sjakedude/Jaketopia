@@ -23,26 +23,40 @@
             <li><a href="about.asp">About</a></li>
         </ul>
     </nav>
-    <!-- Profile image with brief description -->
-    <p>
+
+    <!-- general message -->
+    <p id="welcomeMessage">
         Here residents can pay their rent and view their agreements.
     </p>
-    </br>
-    <input type="text" id="user">
 
-    <div id="userLabel">Username</div>
-    </br>
-    </br>
-    <input type="text" id="pass">
-
-    <div id="passLabel">Password</div>
-
+    <!-- content once logged in -->
     <div id="content"></div>
-
     </br>
-    </br>
+    <div id="message"></div>
+    <div id="paymentCollection">
+        <div id="amount"></div>
+        </br>
+        <input type="checkbox" id="confirm">By checking this box, you agree that you have sent the payment listed above to the landlord.
+        </br>
+        </br>
+        <button class="btn" id="pay" onclick="pay()">Confirm Payment</button>
+    </div>
 
-    <button class="btn" id="login" onclick="login()">Login</button>
+    <!-- username -->
+    <div id="loginConent">
+        <input type="text" id="user">
+        <div id="userLabel">Username</div>
+
+        </br>
+
+        <!-- password -->
+        <input type="text" id="pass">
+        <div id="passLabel">Password</div>
+
+        </br>
+
+        <button class="btn" id="login" onclick="login()">Login</button>
+    </div>
 
     <footer>
         <hr>
