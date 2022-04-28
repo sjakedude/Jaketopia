@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Jaketopia</title>
 </head>
+<script src="js/residents.js"></script>
 
 <body>
     <header>
@@ -20,28 +21,30 @@
             <li><a href="residents.html">Residents</a></li>
             <li><a href="contact.asp">Contact</a></li>
             <li><a href="about.asp">About</a></li>
-      </ul> 
+        </ul>
     </nav>
     <!-- Profile image with brief description -->
     <p>
         Here residents can pay their rent and view their agreements.
     </p>
-    <div class="dropdown">
-        <button class="dropbtn">Select Resident</button>
-        <div class="dropdown-content">
-          <a href="#">Morgan</a>
-          <a href="#">Krista</a>
-        </div>
-      </div> 
-    </section>
     </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<footer>
+    <input type="text" id="user">
+
+    <div id="userLabel">Username</div>
+    </br>
+    </br>
+    <input type="text" id="pass">
+
+    <div id="passLabel">Password</div>
+
+    <div id="content"></div>
+
+    </br>
+    </br>
+
+    <button class="btn" id="login" onclick="login()">Login</button>
+
+    <footer>
         <hr>
         <p>
             <!-- Ending credits -->
@@ -49,5 +52,7 @@
         </p>
     </footer>
 </body>
+
+</html>
 
 </html>
