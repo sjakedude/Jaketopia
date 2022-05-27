@@ -3,6 +3,7 @@ usernames = ["Morgan", "Krista"];
 passwords = ["1234", "pass"];
 bins = ["626ae50725069545a32a84a5"];
 api_key = "$2b$10$tHgr1cxqS0Dsh7wk5ZEpdOnD2k8OD09lSqB42L8tg/Tr3OHGrnTFe";
+global_index = NaN;
 
 function login() {
     // Parsing credentials
@@ -34,7 +35,7 @@ function login() {
 function returnDate() {
     var today = new Date();
     // Change this to simulate next month
-    today.setMonth(4, 3);
+    //today.setMonth(4, 3);
 
     return today;
 }
@@ -105,12 +106,25 @@ function displayDashboard(user, index) {
                 document.getElementById("amount").innerText = "\nYou owe: $" + amount;
                 document.getElementById("confirm").checked = false;
             }
+            global_index = index;
         }
     };
 }
 
+function pay() {
+    if (document.getElementById("confirm").checked) {
+        console.log(global_index);
+    }
+}
+
 function getUserData(user, index, request) {
     request.open("GET", "https://api.jsonbin.io/v3/b/" + bins[index], true);
+    request.setRequestHeader("X-Master-Key", api_key);
+    request.send();
+}
+
+function UpdateUserData(user, index, request) {
+    request.open("PUT", "https://api.jsonbin.io/v3/b/" + bins[index], true);
     request.setRequestHeader("X-Master-Key", api_key);
     request.send();
 }
